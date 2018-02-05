@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Home</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+  </head>
+  <body>
+  <div class="container">
+    <nav class="navbar navbar-light bg-faded">
+      <a class="navbar-brand" href="#"><img src="images/fairworld.svg" width="360"></a>
+      <ul class="nav navbar-nav float-xs-right">
+        <li class="nav-item active">
+          <a class="nav-link" href=""><strong>Store ID:</strong> T001</a>
+        </li>
+        <li class="nav-item"> <a class="nav-link" href="index.html">Logout</a></li>
+      </ul>
+    </nav>
+  </div>
+<div id="page">
+    <div class="container">
+      <div class="text-xs-center overflowH home">
+        <div class="foh">
+          <a href="javascript:;" onclick="location.href='foh/search.html'" class="btn btn-primary">Foh</a>
+        </div>
+        <div class="boh">
+          <a href="javascript:;" onclick="location.href='boh/order.html'" class="btn btn-primary">Boh</a>
+        </div>
+      </div>
+    </div>
+</div>
+<div id="footer">
+    <div class="container">
+      <footer class="footer text-xs-center">
+        <div class="footLink"><a href="">Contact Us</a> | <a href="">Term & condition</a> | <a href="">Privacy Policy</a>  </div>
+        <div class="copyright">&copy; 2016 Fusion. All rights reserved.</div>
+
+      </footer>
+
+    </div>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+    <script>
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 1) {
+                $('.SearchAnimation').addClass("sticky");
+            }
+            else {
+                $('.SearchAnimation').removeClass("sticky");
+            }
+
+            if ($(this).scrollTop() > 20) {
+                $('#footer').slideDown(300);
+                $('#page').css('padding-bottom', 100);
+            } else {
+                console.log('there');
+                $('#footer').slideUp(300);
+            }
+        });
+    </script>
+
+  </body>
+</html>

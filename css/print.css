@@ -1,0 +1,189 @@
+﻿
+.logo {
+    margin:1rem 0;
+    overflow:hidden;
+}
+.logo > h3 span {
+    margin-top: 15px;
+}
+
+body {
+    color:#000!important;
+}
+.table th {
+    background:#0275d8;
+    color:#fff;
+}
+     .table td, .table th {
+    padding:.25rem;
+    border:1px solid black!important;
+    border-collapse:collapse;
+
+}
+.table td {
+  background: #fff;
+}
+
+
+
+
+ ul.listing {
+        list-style:none;
+        margin: 0;
+        padding: 0 0 0;
+    }
+    ul.listing li {
+        list-style:none;
+        margin-bottom: 2px;
+        padding-left: 10px;
+    }
+    ul.listing li span:first-child {
+        vertical-align: top;
+        width: 5%;
+    }
+    ul.listing li span:last-child {
+        width: 88%;
+    }
+
+    ul.listing li span {
+        display: inline-block;
+    }
+    .overflow {
+        overflow: hidden;
+    }
+    .borderTopSolid {
+        border-top: 1px solid #a0a09f;
+        margin-top: 2rem;
+        clear: left;
+        padding:1rem 0;
+        overflow: hidden;
+    }
+
+    .deviceWrapper table td {
+        height: 80px;
+        padding: 10px;
+    }    
+
+
+#Packing-header {
+    margin: 30px 0;
+}
+p{
+  margin-bottom: 0;
+}
+
+#Packing-from .title {
+    float: left;
+    margin: 0;
+    width: 150px;
+    font-weight: bold;
+}
+
+#Packing-from #tbl-packing-from {
+    float: left;
+    width: 200px;
+}
+
+#Packing-despatch .title {
+    float: left;
+    margin: 0;
+    width: 150px;
+    font-weight: bold;
+}
+
+#Packing-despatch #tbl-packing-despatch {
+    float: left;
+    text-align: right;
+    width: auto;
+}
+
+#Packing-despatch {
+    float: right;
+}
+
+#ics-check {
+    border: 1px solid black;
+    padding: 0;
+    width: 490px;
+}
+#ics-check .title {
+    border-right: 1px solid black;
+    float: left;
+    margin: 0;
+    padding: 10px;
+    font-weight: bold;
+}
+.floatright {
+    float: right;
+}
+.floatleft {
+    float: left;
+}
+#barcodes .barcode-wrapper {
+    margin-bottom: 20px;
+}
+#barcodes .title {
+    float: left;
+    margin: 5px 0 0;
+    width: 140px;
+    font-weight: bold;
+}
+#packing-date {
+    margin: 0 0 30px;
+    padding-left: 150px;
+}
+#packing-date .title {
+    float: left;
+    margin: 0;
+    width: 200px;
+}
+
+#packing-list {
+    border: 1px solid black;
+    margin-bottom: -1px;
+}
+#packing-list thead td {
+    font-size: 2em;
+    font-weight: normal;
+    line-height: 1em;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 49%;
+}
+#packing-list td, #packing-list th {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+
+@media print {
+    body {
+      background: #fff;
+        color:black;
+    }
+
+    html {
+      font-size:12px;
+    }
+
+
+     ul.listing li {
+
+        margin-bottom: 0px;
+        line-height:normal;
+
+    }
+    .borderTopSolid {
+        margin-top:0;
+        border:none;
+    }
+
+            .PrintBtn {
+                display: none;
+            }
+            #shipmentimage {
+                -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+            }
+        }

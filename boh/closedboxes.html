@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Boh: ClosedBoxes</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/docs.css" rel="stylesheet">
+  </head>
+  <body>
+  <div class="container">
+    <nav class="navbar navbar-light bg-faded">
+      <a class="navbar-brand" href="#"><img src="../images/fairworld.svg" width="360"></a>
+      <ul class="nav navbar-nav float-xs-right">
+        <li class="nav-item active">
+          <a class="nav-link" href=""><strong>Store ID:</strong> T001</a>
+        </li>
+
+      </ul>
+    </nav>
+    <nav class="navbar">
+<div class="text-xs-right">
+      <a class="nav-link" href="../home.html"> Home</a> |
+      <a class="nav-link" href="order.html"> Order</a> |
+      <a class="nav-link" href="createbox.html">Create Box</a> |
+      <a class="nav-link" href="closedboxes.html">Closed Boxes</a> |
+      <a class="nav-link" href="ageddevices.html">Aged Devices</a> |
+          <a class="nav-link" href="../index.html">   log out</a>
+</div>
+    </nav>
+  </div>
+<div id="page">
+  <div class="container">
+    <div class="boh-container">
+        <div class="row1">
+            <div class="BohSearch_Mobile hidden-md-up">
+                <!-- For Mobile Search -->
+                <div class="form-inline">
+                    <div id="mdivError" class="form-group">
+                        <input type="number" autocomplete="off" placeholder="Eksempel 126032780" txtfor="imei" id="txtModel1" class="form-control">
+                        <button name="Search" onclick="msearchOrder()" id="btnsearch" class="fa fa-search"></button>
+                        <div id="mdivErrorSearch" style="color:red" class="help-block with-errors"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-heading"><h2>Closed Boxes</h2> </div>
+            <div class="BohSearch text-xs-right hidden-sm-down">
+                <div class="form-inline">
+                    <div id="divError" class="form-group">
+                        <input type="number" autocomplete="off" placeholder="Eksempel 126032780" class="form-control" name="txtModel">
+                        <button name="Search" class="btn btn-primary">Search </button>
+                        <div id="divErrorSearch" style="color:red" class="help-block with-errors"></div>
+                    </div>
+                </div>
+            </div>
+
+      <div class="table-responsive whiteBG">
+        <table class="table table-bordered">
+          <caption class="captionTop">Previous Circulars (last 500)</caption>
+       <thead class="thead-default">
+         <tr>
+             <th>shipment ID </th>
+             <th>Utleveransdatum</th>
+             <th>Utleveranstid</th>
+             <th>Count</th>
+             <th>Received by Bright Star</th>
+             <th></th>
+
+         </tr>
+         </thead>
+          <tbody>
+            <tr>
+              <td> 6</td>
+              <td>07-12-2016  </td>
+              <td>06:29 PM </td>
+              <td>2</td>
+              <td>  </td>
+              <td> <a class="btn btn-secondary btn-sm" target="_blank" href="PrintWrraperForBox.html">Print</a> </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      </div>
+    </div>
+
+    <div class="container-fluid Boh-pagination">
+            <div class="row">
+                <div class="col-sm-4"><div class="pagination-count">Showing 1 to 8 of <strong>8</strong> transaksjoner </div></div>
+                <div class="col-sm-8 text-xs-right">
+                  <div class="pagination-container">
+                  <ul class="pagination">
+                    <li class="active page-item"><a class="page-link">1</a></li>
+                    <li class="page-item"><a href="/Boh?page=2&amp;pageSize=15" class="page-link">2</a></li>
+                    <li class="PagedList-skipToNext page-item"><a rel="next" href="/Boh?page=2&amp;pageSize=15" class="page-link">»</a></li>
+                  </ul>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div id="footer">
+    <div class="container">
+      <footer class="footer text-xs-center">
+        <div class="footLink"><a href="">Contact Us</a> | <a href="">Term & condition</a> | <a href="">Privacy Policy</a>  </div>
+        <div class="copyright">&copy; 2016 Fusion. All rights reserved.</div>
+
+      </footer>
+
+    </div>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+    <script>
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 1) {
+                $('.SearchAnimation').addClass("sticky");
+            }
+            else {
+                $('.SearchAnimation').removeClass("sticky");
+            }
+
+            if ($(this).scrollTop() > 20) {
+                $('#footer').slideDown(300);
+                $('#page').css('padding-bottom', 100);
+            } else {
+                console.log('there');
+                $('#footer').slideUp(300);
+            }
+        });
+    </script>
+
+  </body>
+</html>

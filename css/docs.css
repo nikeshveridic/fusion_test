@@ -1,0 +1,443 @@
+body{
+background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc1JyBoZWlnaHQ9JzUnPgo8cmVjdCB3aWR0aD0nNScgaGVpZ2h0PSc1JyBmaWxsPScjZmZmJy8+CjxyZWN0IHdpZHRoPScxJyBoZWlnaHQ9JzEnIGZpbGw9JyNjY2MnLz4KPC9zdmc+"); background-repeat: repeat;
+}
+.action{
+  margin-top: 10px;
+}
+
+/* Homr */
+.home {
+  margin: 10rem 0 0;
+}
+.foh, .boh {
+  display: inline-block;
+  max-width: 290px;
+  width: 100%;
+  margin: 0 2rem;
+
+}
+.foh a, .boh a{
+ display: block;
+ height: 100px;
+ padding: 2.2rem 0;
+ font-size: 1.5rem;
+ text-transform: uppercase;
+
+}
+.overflowH{
+  overflow: hidden;
+}
+
+/* Search Page */
+
+.signinSearch {
+
+  margin-top: 5rem;
+
+
+}
+.signinSearch .form-inline {
+    background: #ccc;
+      max-width: 400px;
+      padding: 2rem;
+      margin-left: auto;
+      margin-right:auto;
+}
+.signinSearch small{
+  color:#848484;
+  float:left;
+  width: 100%;
+  text-align:left;
+  padding-left: 12px;
+}
+#divErrorSearch {
+  text-align: left;
+  width:100%;
+  display: block;
+  float: left;
+  padding-left: 12px;
+}
+/* Search Result */
+.pageTitle{
+  padding-left: 15px;
+}
+.product-block{
+  background: #fff;
+  border:1px solid #ccc;
+  margin-bottom: 2rem;
+}
+.product-img {
+  max-height: 200px;
+  height: 100%;
+  margin: 2rem;
+}
+
+/* Inspection Page */
+
+.price{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.PriceBlock{
+  padding: 1rem;
+  border:1px solid #ccc;
+  background: #fff;
+  margin-top: 3rem;
+}
+.PriceBlockSub {
+  list-style: none;
+  background: #fff;
+  padding: 0;
+}
+.PriceBlock ul{
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.PriceBlock ul li {
+    clear: left;
+    border-bottom:1px solid #efefef;
+    overflow: hidden;
+    position: relative;
+    padding: 2px 0;
+}
+.PriceBlock ul li:last-child{
+  border: none;
+}
+.PriceBlock ul li li{
+  border:none;
+}
+.PriceBlock .price{
+  font-size: 15px;
+}
+.grandTotal{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.modelBlock {
+  background: #fff;
+  text-align: center;
+  border: 1px solid #ccc;
+  max-height: 373px;
+  height: 373px;
+  padding: 1rem;
+}
+
+.Specification{
+  border:1px solid #ccc;
+  background: #fff;
+  overflow: hidden;
+}
+.Specification h4{
+  font-size: 1rem;
+  margin: 0;
+}
+.specHeading{
+  padding: 0.625rem;
+  background: #f7f7f9;
+}
+.specMsg h4{
+  color: #fff;
+  padding: 0.625rem;
+  background: #0275d8;
+}
+.specMsg ul{
+  list-style: none;
+  padding: 0;
+  margin: 1rem;
+}
+.specMsg ul li{
+  display: inline;
+}
+.deviceColor a{
+  border:1px solid;
+  padding: 0px 8px;
+  color:#fff;
+  font-size: 12px;
+  border-radius: 50%;
+
+}
+.deviceColor li:first-child,
+.capacity li:first-child,
+.spec li:first-child {
+  width:140px;
+  float: left;
+  text-align: right;
+  padding-right: 10px;
+}
+.deviceColor li {
+  padding-right: 10px;
+}
+.capacity li a{
+  border:1px solid #ccc;
+  padding: 0 5px;
+}
+
+.deviceColor .active a,
+.capacity .active a{
+  border:1px solid red;
+}
+
+.spec{
+  overflow: hidden;
+  float: left;
+  width: 100%;
+}
+
+
+.help i {
+
+    background: #ccc;
+    border-radius: 50%;
+    padding: 0 8px;
+
+}
+
+
+a.help {
+   font-size: 0.875rem;
+   font-weight: normal;
+    right: 0.5rem;
+    text-align: center;
+    top:0.875rem;
+
+}
+    a.help:hover {
+        color: #990ae3;
+        border-color: #990ae3;
+
+    }
+
+    .inspection ul {
+
+            width: 100%;
+            list-style: none;
+            text-align: left;
+
+        }
+            .inspection ul li {
+
+                background: #fff;
+                /*margin-bottom: 0.625rem;*/
+                border-bottom:1px solid #ccc;
+                position: relative;
+                padding: 10px;
+
+            }
+            .inspection ul li:last-child{
+              margin-bottom: 0;
+            }
+         .inspection ul li p {
+           margin-bottom: 0;
+           margin-right: 40px;
+         }
+
+
+
+        .inspection ul li img {
+              top: 0;
+          }
+          .fa > img {
+            margin-top: -5px;
+            position: static !important;
+            top: 0 !important;
+            width: 3px;
+        }
+
+/* Customer Page */
+.grand-Price{
+  background: #fff;
+  width: 100%;
+
+}
+.individualBlock{
+  background: #fff;
+  border:1px solid #ccc;
+  padding:10px;
+  overflow: hidden;
+}
+.individualBlock .form-group {
+  float: left;
+  margin: 10px;
+  width: 30%;
+}
+
+.finalInspection {
+  margin-bottom: 20px;
+  margin-top: 1rem;
+}
+.FinalBlock{
+  background: #fff;
+  border:1px solid #ccc;
+  padding:20px;
+  overflow: hidden;
+}
+
+.FinalBlock .figure {
+  display: block;
+}
+.fdesc{
+  min-height: 75px;
+}
+
+.FinalBlock ul{
+  list-style: none;
+  padding: 0;
+}
+
+.checkbox-inline1.customCheck {
+    display: inline-block;
+}
+
+
+
+/* ******************Custom Checkbox********** */
+
+.ui-btn{
+    opacity: 0;
+    position: absolute;
+
+}
+
+
+.ui-btn, .ui-chk-lbl, .radio-custom, .radio-custom-label {
+
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    font-weight:normal;
+}
+
+.ui-chk-lbl, .radio-custom-label {
+    position: relative;
+}
+
+.ui-btn + .ui-chk-lbl:before, .radio-custom + .radio-custom-label:before {
+    content: '';
+    background: #fff;
+    border: 1px solid #949494;
+    display: inline-block;
+    vertical-align: middle;
+    width:  2rem;
+    height:  2rem;
+    padding: 0px;
+    margin-right: 0.625rem;
+    text-align: center;
+}
+
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+
+}
+
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.ui-btn:checked + .ui-chk-lbl:before {
+    background-image: url("../images/tick.svg");
+    background-repeat: no-repeat;
+    background-position:0.1875rem 0.2125rem;
+    border: 1px solid #222;
+}
+
+.radio-custom + .radio-custom-label:before {
+    border-radius: 50%;
+}
+
+.radio-custom:checked + .radio-custom-label:before {
+    content: "\f00c";
+    font-family: 'FontAwesome';
+    color: #bbb;
+}
+
+.ui-btn:focus + .ui-chk-lbl, .radio-custom:focus + .radio-custom-label {
+  outline: none; /* focus style */
+}
+
+.checkbox-container {
+    float:right;
+    margin:6px 0 0 0;
+    top:20px;
+    position: absolute;
+    right: 0;
+}
+
+.checkbox-container input {
+  position:absolute
+
+}
+
+
+
+/* ******************End Custom Checkbox********** */
+
+
+/* Thank you */
+
+.ThankyouRightBlock{
+  background: #fff ;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  padding: 10px;
+  min-height: 330px;
+}
+
+
+/* Boh */
+.boh-container {
+    position: relative;
+}
+
+.whiteBG td{
+  background: #fff;
+}
+
+.BohSearch {
+    position: absolute;
+    right: 0;
+}
+
+caption.captionTop {
+    caption-side: top;
+    font-size: 1.25rem;
+}
+
+
+
+.scanEnter .form-group {
+    margin-bottom: 0.5rem;
+    width: 19.6%;
+}
+
+.scanEnter .form-group input {
+    width: 100%;
+}
+
+.pagination-count {
+    margin-bottom: 1.2rem;
+    margin-left: -15px;
+    margin-top: 1.2rem;
+}
+
+/* Footer */
+
+#footer {
+
+   position:fixed;
+   z-index:9999;
+   bottom:0;
+   width:100%;
+   bottom:0px;
+
+}
+
+.footer {
+  background: #ccc;
+  padding: 10px 0;
+}
